@@ -18,8 +18,14 @@ body,
   white-space: nowrap;
   letter-spacing: -0.3em;
   -webkit-transition: transform 800ms cubic-bezier(0.8, 0, 0.2, 1);
+  -moz-transition: transform 800ms cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition: transform 800ms cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition: transform 800ms cubic-bezier(0.8, 0, 0.2, 1);
   transition: transform 800ms cubic-bezier(0.8, 0, 0.2, 1);
   -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0)
 }
 
@@ -69,11 +75,17 @@ body,
   font-size: 0;
   border-top: 0.5rem solid #D5D110;
   -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
   transition: width 0.5s ease
 }
 
 #slide2:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0)
 }
 
@@ -95,6 +107,9 @@ body,
 
 #slide3:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-200%, 0, 0);
+  -moz-transform: translate3d(-200%, 0, 0);
+  -ms-transform: translate3d(-200%, 0, 0);
+  -o-transform: translate3d(-200%, 0, 0);
   transform: translate3d(-200%, 0, 0)
 }
 
@@ -108,6 +123,9 @@ body,
 
 #slide4:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-300%, 0, 0);
+  -moz-transform: translate3d(-300%, 0, 0);
+  -ms-transform: translate3d(-300%, 0, 0);
+  -o-transform: translate3d(-300%, 0, 0);
   transform: translate3d(-300%, 0, 0)
 }
 
@@ -121,6 +139,9 @@ body,
 
 #slide5:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-400%, 0, 0);
+  -moz-transform: translate3d(-400%, 0, 0);
+  -ms-transform: translate3d(-400%, 0, 0);
+  -o-transform: translate3d(-400%, 0, 0);
   transform: translate3d(-400%, 0, 0)
 }
 
@@ -134,6 +155,9 @@ body,
 
 #slide6:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-500%, 0, 0);
+  -moz-transform: translate3d(-500%, 0, 0);
+  -ms-transform: translate3d(-500%, 0, 0);
+  -o-transform: translate3d(-500%, 0, 0);
   transform: translate3d(-500%, 0, 0)
 }
 
@@ -147,6 +171,9 @@ body,
 
 #slide7:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-600%, 0, 0);
+  -moz-transform: translate3d(-600%, 0, 0);
+  -ms-transform: translate3d(-600%, 0, 0);
+  -o-transform: translate3d(-600%, 0, 0);
   transform: translate3d(-600%, 0, 0)
 }
 
@@ -160,6 +187,9 @@ body,
 
 #slide8:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-700%, 0, 0);
+  -moz-transform: translate3d(-700%, 0, 0);
+  -ms-transform: translate3d(-700%, 0, 0);
+  -o-transform: translate3d(-700%, 0, 0);
   transform: translate3d(-700%, 0, 0)
 }
 
@@ -173,6 +203,9 @@ body,
 
 #slide9:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-800%, 0, 0);
+  -moz-transform: translate3d(-800%, 0, 0);
+  -ms-transform: translate3d(-800%, 0, 0);
+  -o-transform: translate3d(-800%, 0, 0);
   transform: translate3d(-800%, 0, 0)
 }
 
@@ -186,6 +219,9 @@ body,
 
 #slide10:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-900%, 0, 0);
+  -moz-transform: translate3d(-900%, 0, 0);
+  -ms-transform: translate3d(-900%, 0, 0);
+  -o-transform: translate3d(-900%, 0, 0);
   transform: translate3d(-900%, 0, 0)
 }
 
@@ -199,6 +235,9 @@ body,
 
 #slide11:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-1000%, 0, 0);
+  -moz-transform: translate3d(-1000%, 0, 0);
+  -ms-transform: translate3d(-1000%, 0, 0);
+  -o-transform: translate3d(-1000%, 0, 0);
   transform: translate3d(-1000%, 0, 0)
 }
 
@@ -212,6 +251,9 @@ body,
 
 #slide12:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-1100%, 0, 0);
+  -moz-transform: translate3d(-1100%, 0, 0);
+  -ms-transform: translate3d(-1100%, 0, 0);
+  -o-transform: translate3d(-1100%, 0, 0);
   transform: translate3d(-1100%, 0, 0)
 }
 
@@ -225,6 +267,9 @@ body,
 
 #slide13:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-1200%, 0, 0);
+  -moz-transform: translate3d(-1200%, 0, 0);
+  -ms-transform: translate3d(-1200%, 0, 0);
+  -o-transform: translate3d(-1200%, 0, 0);
   transform: translate3d(-1200%, 0, 0)
 }
 
@@ -238,6 +283,9 @@ body,
 
 #slide14:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-1300%, 0, 0);
+  -moz-transform: translate3d(-1300%, 0, 0);
+  -ms-transform: translate3d(-1300%, 0, 0);
+  -o-transform: translate3d(-1300%, 0, 0);
   transform: translate3d(-1300%, 0, 0)
 }
 
@@ -251,6 +299,9 @@ body,
 
 #slide15:checked ~ .slideshowbob__container {
   -webkit-transform: translate3d(-1400%, 0, 0);
+  -moz-transform: translate3d(-1400%, 0, 0);
+  -ms-transform: translate3d(-1400%, 0, 0);
+  -o-transform: translate3d(-1400%, 0, 0);
   transform: translate3d(-1400%, 0, 0)
 }
 

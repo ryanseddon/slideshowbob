@@ -31,7 +31,7 @@ module.exports = function(grunt) {
         csslintrc: '.csslintrc'
       },
       dist: {
-        src: ['dist/*.css']
+        src: ['dist/<%= pkg.name %>.css']
       }
     },
     cssmin: {
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
           ['rework.prefix', 'transition'],
           ['rework.prefix', 'transform']
         ],
-        vendors: ['-webkit-']
+        vendors: ['-webkit-', '-moz-', '-ms-', '-o-']
       }
     }
   });
