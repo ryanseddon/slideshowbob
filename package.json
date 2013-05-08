@@ -1,0 +1,29 @@
+{
+  "name": "slideshowbob",
+  "version": "1.0.0",
+  "description": "Slide show framework in pure CSS",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanseddon/slideshowbob.git"
+  },
+  "keywords": [
+    "css",
+    ":checked"
+  ],
+  "author": "Ryan Seddon",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-cssmin": "0.4.1",
+    "grunt-contrib-csslint": "0.1.2",
+    "grunt-contrib-sass": "0.2.2",
+    "grunt-rework": "0.0.3",
+    "grunt-contrib-watch": "0.3.1",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-connect": "~0.3.0"
+  }
+}

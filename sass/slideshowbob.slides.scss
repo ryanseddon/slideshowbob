@@ -1,0 +1,5 @@
+@import "slideshowbob";
+
+@for $i from 2 through $slide-count {
+    @include slideshowbob($i);
+}

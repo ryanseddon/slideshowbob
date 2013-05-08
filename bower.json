@@ -1,0 +1,10 @@
+{
+  "name": "slideshowbob",
+  "version": "1.0.0",
+  "main": "dist/slideshowbob.css",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}
