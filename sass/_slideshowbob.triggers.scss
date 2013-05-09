@@ -1,0 +1,23 @@
+@mixin slideshowbob( $slides ) {
+    $slide-n: $slides - 1;
+
+    #slide#{$slides}:checked ~ .slideshowbob__container {
+            transform: translate3d(#{-100% * $slide-n}, 0, 0);
+    }
+    
+    #slide#{$slides}:checked ~ .slideshowbob__controls label:nth-child(#{$slides}) {
+        color: #fff;
+    }
+
+    @if $slide-n == 1 {
+        #slide#{$slide-n}:checked ~ .slideshowbob__progress {
+            width: #{100% / $slide-count}; 
+        }
+        #slide#{$slide-n}:checked ~ .slideshowbob__controls label:nth-child(#{$slide-n}) {
+            color: #fff;
+        }
+    }
+    #slide#{$slides}:checked ~ .slideshowbob__progress {
+        width: #{100% / $slide-count * $slides}; 
+    }
+}

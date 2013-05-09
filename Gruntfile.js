@@ -19,10 +19,11 @@ module.exports = function(grunt) {
       main: {
         options: {
           style: 'expanded',
-          precision: 1
+          precision: 1,
+          sourcemap: true
         },
         files: {
-          'dist/<%= pkg.name %>.css': 'sass/<%= pkg.name %>.slides.scss'
+          'dist/<%= pkg.name %>.css': 'sass/<%= pkg.name %>.package.scss'
         }
       }
     },
@@ -45,9 +46,10 @@ module.exports = function(grunt) {
       options: {
         use: [
           ['rework.prefix', 'transition'],
-          ['rework.prefix', 'transform']
+          ['rework.prefix', 'transform'],
+          ['rework.prefixValue', 'transform']
         ],
-        vendors: ['-webkit-', '-moz-', '-ms-', '-o-']
+        vendors: ['-webkit-', '-moz-']
       }
     }
   });
