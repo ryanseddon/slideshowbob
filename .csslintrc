@@ -1,5 +1,6 @@
 {
     "ids": false,
     "universal-selector": false,
-    "fallback-colors": false
+    "fallback-colors": false,
+    "compatible-vendor-prefixes": false
 }

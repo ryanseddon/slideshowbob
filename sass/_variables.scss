@@ -1,1 +1,11 @@
-$slide-count: 15 !default;
+$base-font-colour: #eee !default;
+
+$slide-count: 11 !default;
+$slide-font-family: "Open Sans", sans-serif !default;
+$slide-font-heading: "Montserrat", Impact, sans-serif !default;
+$slide-odd-colour: #1F978D !default;
+$slide-even-colour: #5CBD9C !default;
+$slide-controls-colour: #723A2D !default;
+$slide-progress-colour: #D5D110 !default;
+$slide-transition-timing: 800ms !default;
+$slide-easing-function: cubic-bezier(0.77, 0, 0.175, 1) !default;

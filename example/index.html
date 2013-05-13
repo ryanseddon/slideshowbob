@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>slideshowbob.css | The evil, fumbling, JavaScript free, slide thingy</title>
+    <meta name="description" content="There's plenty of JavaScript based slide engines screw all of the them this is CSS only, high fives all round.">
+    <meta name="viewport" content="width=1024">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../dist/slideshowbob.css">
+    <link rel="stylesheet" href="css/theme.demo.css">
+    <link rel="stylesheet" href="css/syntax.css">
+  </head>
+  <body>
+        <div class="slideshowbob">
+          <input type="radio" checked autofocus id="slideshowbob1" name="slider">
+          <input type="radio" id="slideshowbob2" name="slider">
+          <input type="radio" id="slideshowbob3" name="slider">
+          <input type="radio" id="slideshowbob4" name="slider">
+          <input type="radio" id="slideshowbob5" name="slider">
+          <input type="radio" id="slideshowbob6" name="slider">
+          <input type="radio" id="slideshowbob7" name="slider">
+          <input type="radio" id="slideshowbob8" name="slider">
+          <input type="radio" id="slideshowbob9" name="slider">
+          <input type="radio" id="slideshowbob10" name="slider">
+          <input type="radio" id="slideshowbob11" name="slider">
+
+          <div class="slideshowbob__container">
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <img src="img/silhoeutte.png" />
+                <h1>Slideshowbob.css</h1>
+                <p>The CSS only slide framework to rule them all.</p>
+              </div>
+            </div>
+            
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Die Bart Die</h1>
+                <p>Using the power of :checked and inputs<br /> we can create a slide based system.</p>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>It's just HTML and CSS</h1>
+                <p>Embed code, images or even switch the background with animated gifs</p>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Gifs</h1>
+                <p>Manically laugh with amazing gif backgrounds</p>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Show off code</h1>
+<div class="syntax"><pre><span class="nf">#slideshowbob4</span><span class="nd">:checked</span> <span class="o">~</span> <span class="nc">.slideshowbob__container</span> <span class="nc">.slideshowbob__slide</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">4</span><span class="o">)</span><span class="nd">:after</span> <span class="p">{</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s2">""</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../img/manical.gif)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">-</span><span class="k">size</span><span class="o">:</span> <span class="n">cover</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">right</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">opacity</span><span class="o">:</span> <span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Change up the transition</h1>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Scale it</h1>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Back to normal</h1>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Uses SASS</h1>
+                <p>Makes is so much easier to generate for how many slides you need</p>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1><a href="https://github.com/ryanseddon/slideshowbob">Fork on github</a></h1>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>With &#x2764; Ryan Seddon</h1>
+                <p>Building things with :checked before it was cool.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slideshowbob__controls">
+            <label for="slideshowbob1"><span>&#x21dc;</span><span>&#x21dd;</span></label>
+            <label for="slideshowbob2"><span>&#x21dc;</span><span>&#x21dd;</span></label>
+            <label for="slideshowbob3"><span>&#x21dc;</span><span>&#x21dd;</span></label>
+            <label for="slideshowbob4"><span>&#x21dc;</span><span>&#x21dd;</span></label>
+            <label for="slideshowbob5"><span>&#x21dc;</span><span>&#x21dd;</span></label>
+            <label for="slideshowbob6"><span>&#x21dc;</span><span>&#x21dd;</span></label>
+            <label for="slideshowbob7"><span>&#x21dc;</span><span>&#x21dd;</span></label>
+            <label for="slideshowbob8"><span>&#x21dc;</span><span>&#x21dd;</span></label>
+            <label for="slideshowbob9"><span>&#x21dc;</span><span>&#x21dd;</span></label>
+            <label for="slideshowbob10"><span>&#x21dc;</span><span>&#x21dd;</span></label>
+            <label for="slideshowbob11"><span>&#x21dc;</span><span>&#x21dd;</span></label>
+          </div>
+
+          <div class="slideshowbob__progress"></div>
+        </div>
+  </body>
+</html>

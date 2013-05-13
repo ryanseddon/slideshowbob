@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           sourcemap: true
         },
         files: {
-          'dist/<%= pkg.name %>.css': 'sass/<%= pkg.name %>.package.scss'
+          'dist/<%= pkg.name %>.css': 'sass/<%= pkg.name %>.scss'
         }
       }
     },
@@ -37,8 +37,12 @@ module.exports = function(grunt) {
     },
     cssmin: {
       dist: {
-        src: 'dist/<%= pkg.name %>.css',
-        dest: 'dist/<%= pkg.name %>.min.css'
+        options: {
+          banner: '<%= banner %>'
+        },
+        files: {
+          'dist/<%= pkg.name %>.min.css': 'dist/<%= pkg.name %>.css'
+        }
       }
     },
     rework: {
@@ -47,9 +51,9 @@ module.exports = function(grunt) {
         use: [
           ['rework.prefix', 'transition'],
           ['rework.prefix', 'transform'],
-          ['rework.prefixValue', 'transform']
+          ['rework.prefix', 'box-sizing']
         ],
-        vendors: ['-webkit-', '-moz-']
+        vendors: ['-webkit-', '-moz-', '-o-']
       }
     }
   });
