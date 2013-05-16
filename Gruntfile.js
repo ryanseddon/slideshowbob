@@ -45,15 +45,14 @@ module.exports = function(grunt) {
         }
       }
     },
-    rework: {
-      'dist/<%= pkg.name %>.css': 'dist/<%= pkg.name %>.css',
+    autoprefixer: {
       options: {
-        use: [
-          ['rework.prefix', 'transition'],
-          ['rework.prefix', 'transform'],
-          ['rework.prefix', 'box-sizing']
-        ],
-        vendors: ['-webkit-', '-moz-', '-o-']
+        browsers: ['last 1 version']
+      },
+      dist: {
+        files: {
+          'dist/<%= pkg.name %>.css': ['dist/<%= pkg.name %>.css']
+        }
       }
     }
   });
@@ -61,6 +60,6 @@ module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   // Default task.
-  grunt.registerTask('default', ['sass', 'rework', 'csslint', 'cssmin']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'csslint', 'cssmin']);
 
 };
