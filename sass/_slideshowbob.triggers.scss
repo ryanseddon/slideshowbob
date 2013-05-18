@@ -17,8 +17,9 @@
 
     #slideshowbob#{$slide-n}:checked ~ .slideshowbob__controls label:nth-child(#{$slides}) {
         left: auto;
-        right: 1.5rem;
-        display: block;
+        right: 0;
+        z-index: 1;
+        text-align: right;
 
         span:last-child {
             display: block;
@@ -27,9 +28,12 @@
 
     #slideshowbob#{$slides}:checked ~ .slideshowbob__controls label:nth-child(#{$slide-n}) {
         display: block;
+        z-index: 1;
 
         span:first-child {
             display: block;
+            right: auto;
+            left: 1.5rem;
         }
     }
 }

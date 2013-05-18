@@ -45,10 +45,6 @@
   text-align: center
 }
 
-.slideshowbob__controls label {
-  background: #723a2d
-}
-
 html,
 body,
 .slideshowbob {
@@ -126,25 +122,25 @@ body,
 
 .slideshowbob__controls {
   position: absolute;
-  top: 40%;
+  height: 100%;
   width: 100%
 }
 
 .slideshowbob__controls label {
-  display: none;
-  width: 60px;
-  height: 60px;
+  width: 30%;
   font-size: 60px;
   line-height: 50px;
-  text-align: center;
+  text-align: left;
   position: absolute;
-  top: 50%;
-  left: 1.5rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
   cursor: pointer;
-  opacity: 0.3;
-  border-radius: 50%;
+  opacity: 0.1;
   -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease
+  transition: opacity 0.5s ease;
+  vertical-align: middle;
+  z-index: -1
 }
 
 .slideshowbob__controls label:hover {
@@ -152,7 +148,13 @@ body,
 }
 
 .slideshowbob__controls label span {
-  display: none
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0)
 }
 
 .slideshowbob__progress {
@@ -183,8 +185,9 @@ body,
 
 #slideshowbob1:checked ~ .slideshowbob__controls label:nth-child(2) {
   left: auto;
-  right: 1.5rem;
-  display: block
+  right: 0;
+  z-index: 1;
+  text-align: right
 }
 
 #slideshowbob1:checked ~ .slideshowbob__controls label:nth-child(2) span:last-child {
@@ -192,11 +195,14 @@ body,
 }
 
 #slideshowbob2:checked ~ .slideshowbob__controls label:nth-child(1) {
-  display: block
+  display: block;
+  z-index: 1
 }
 
 #slideshowbob2:checked ~ .slideshowbob__controls label:nth-child(1) span:first-child {
-  display: block
+  display: block;
+  right: auto;
+  left: 1.5rem
 }
 
 #slideshowbob3:checked ~ .slideshowbob__container {
@@ -210,8 +216,9 @@ body,
 
 #slideshowbob2:checked ~ .slideshowbob__controls label:nth-child(3) {
   left: auto;
-  right: 1.5rem;
-  display: block
+  right: 0;
+  z-index: 1;
+  text-align: right
 }
 
 #slideshowbob2:checked ~ .slideshowbob__controls label:nth-child(3) span:last-child {
@@ -219,11 +226,14 @@ body,
 }
 
 #slideshowbob3:checked ~ .slideshowbob__controls label:nth-child(2) {
-  display: block
+  display: block;
+  z-index: 1
 }
 
 #slideshowbob3:checked ~ .slideshowbob__controls label:nth-child(2) span:first-child {
-  display: block
+  display: block;
+  right: auto;
+  left: 1.5rem
 }
 
 #slideshowbob4:checked ~ .slideshowbob__container {
@@ -237,8 +247,9 @@ body,
 
 #slideshowbob3:checked ~ .slideshowbob__controls label:nth-child(4) {
   left: auto;
-  right: 1.5rem;
-  display: block
+  right: 0;
+  z-index: 1;
+  text-align: right
 }
 
 #slideshowbob3:checked ~ .slideshowbob__controls label:nth-child(4) span:last-child {
@@ -246,11 +257,14 @@ body,
 }
 
 #slideshowbob4:checked ~ .slideshowbob__controls label:nth-child(3) {
-  display: block
+  display: block;
+  z-index: 1
 }
 
 #slideshowbob4:checked ~ .slideshowbob__controls label:nth-child(3) span:first-child {
-  display: block
+  display: block;
+  right: auto;
+  left: 1.5rem
 }
 
 #slideshowbob5:checked ~ .slideshowbob__container {
@@ -264,8 +278,9 @@ body,
 
 #slideshowbob4:checked ~ .slideshowbob__controls label:nth-child(5) {
   left: auto;
-  right: 1.5rem;
-  display: block
+  right: 0;
+  z-index: 1;
+  text-align: right
 }
 
 #slideshowbob4:checked ~ .slideshowbob__controls label:nth-child(5) span:last-child {
@@ -273,11 +288,14 @@ body,
 }
 
 #slideshowbob5:checked ~ .slideshowbob__controls label:nth-child(4) {
-  display: block
+  display: block;
+  z-index: 1
 }
 
 #slideshowbob5:checked ~ .slideshowbob__controls label:nth-child(4) span:first-child {
-  display: block
+  display: block;
+  right: auto;
+  left: 1.5rem
 }
 
 #slideshowbob6:checked ~ .slideshowbob__container {
@@ -291,8 +309,9 @@ body,
 
 #slideshowbob5:checked ~ .slideshowbob__controls label:nth-child(6) {
   left: auto;
-  right: 1.5rem;
-  display: block
+  right: 0;
+  z-index: 1;
+  text-align: right
 }
 
 #slideshowbob5:checked ~ .slideshowbob__controls label:nth-child(6) span:last-child {
@@ -300,11 +319,14 @@ body,
 }
 
 #slideshowbob6:checked ~ .slideshowbob__controls label:nth-child(5) {
-  display: block
+  display: block;
+  z-index: 1
 }
 
 #slideshowbob6:checked ~ .slideshowbob__controls label:nth-child(5) span:first-child {
-  display: block
+  display: block;
+  right: auto;
+  left: 1.5rem
 }
 
 #slideshowbob7:checked ~ .slideshowbob__container {
@@ -318,8 +340,9 @@ body,
 
 #slideshowbob6:checked ~ .slideshowbob__controls label:nth-child(7) {
   left: auto;
-  right: 1.5rem;
-  display: block
+  right: 0;
+  z-index: 1;
+  text-align: right
 }
 
 #slideshowbob6:checked ~ .slideshowbob__controls label:nth-child(7) span:last-child {
@@ -327,11 +350,14 @@ body,
 }
 
 #slideshowbob7:checked ~ .slideshowbob__controls label:nth-child(6) {
-  display: block
+  display: block;
+  z-index: 1
 }
 
 #slideshowbob7:checked ~ .slideshowbob__controls label:nth-child(6) span:first-child {
-  display: block
+  display: block;
+  right: auto;
+  left: 1.5rem
 }
 
 #slideshowbob8:checked ~ .slideshowbob__container {
@@ -345,8 +371,9 @@ body,
 
 #slideshowbob7:checked ~ .slideshowbob__controls label:nth-child(8) {
   left: auto;
-  right: 1.5rem;
-  display: block
+  right: 0;
+  z-index: 1;
+  text-align: right
 }
 
 #slideshowbob7:checked ~ .slideshowbob__controls label:nth-child(8) span:last-child {
@@ -354,11 +381,14 @@ body,
 }
 
 #slideshowbob8:checked ~ .slideshowbob__controls label:nth-child(7) {
-  display: block
+  display: block;
+  z-index: 1
 }
 
 #slideshowbob8:checked ~ .slideshowbob__controls label:nth-child(7) span:first-child {
-  display: block
+  display: block;
+  right: auto;
+  left: 1.5rem
 }
 
 #slideshowbob9:checked ~ .slideshowbob__container {
@@ -372,8 +402,9 @@ body,
 
 #slideshowbob8:checked ~ .slideshowbob__controls label:nth-child(9) {
   left: auto;
-  right: 1.5rem;
-  display: block
+  right: 0;
+  z-index: 1;
+  text-align: right
 }
 
 #slideshowbob8:checked ~ .slideshowbob__controls label:nth-child(9) span:last-child {
@@ -381,11 +412,14 @@ body,
 }
 
 #slideshowbob9:checked ~ .slideshowbob__controls label:nth-child(8) {
-  display: block
+  display: block;
+  z-index: 1
 }
 
 #slideshowbob9:checked ~ .slideshowbob__controls label:nth-child(8) span:first-child {
-  display: block
+  display: block;
+  right: auto;
+  left: 1.5rem
 }
 
 #slideshowbob10:checked ~ .slideshowbob__container {
@@ -399,8 +433,9 @@ body,
 
 #slideshowbob9:checked ~ .slideshowbob__controls label:nth-child(10) {
   left: auto;
-  right: 1.5rem;
-  display: block
+  right: 0;
+  z-index: 1;
+  text-align: right
 }
 
 #slideshowbob9:checked ~ .slideshowbob__controls label:nth-child(10) span:last-child {
@@ -408,11 +443,14 @@ body,
 }
 
 #slideshowbob10:checked ~ .slideshowbob__controls label:nth-child(9) {
-  display: block
+  display: block;
+  z-index: 1
 }
 
 #slideshowbob10:checked ~ .slideshowbob__controls label:nth-child(9) span:first-child {
-  display: block
+  display: block;
+  right: auto;
+  left: 1.5rem
 }
 
 #slideshowbob11:checked ~ .slideshowbob__container {
@@ -426,8 +464,9 @@ body,
 
 #slideshowbob10:checked ~ .slideshowbob__controls label:nth-child(11) {
   left: auto;
-  right: 1.5rem;
-  display: block
+  right: 0;
+  z-index: 1;
+  text-align: right
 }
 
 #slideshowbob10:checked ~ .slideshowbob__controls label:nth-child(11) span:last-child {
@@ -435,9 +474,12 @@ body,
 }
 
 #slideshowbob11:checked ~ .slideshowbob__controls label:nth-child(10) {
-  display: block
+  display: block;
+  z-index: 1
 }
 
 #slideshowbob11:checked ~ .slideshowbob__controls label:nth-child(10) span:first-child {
-  display: block
+  display: block;
+  right: auto;
+  left: 1.5rem
 }

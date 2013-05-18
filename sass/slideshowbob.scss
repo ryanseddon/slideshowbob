@@ -70,23 +70,23 @@ html, body, .slideshowbob {
 
 .slideshowbob__controls {
     position: absolute;
-    top: 40%;
+    height: 100%;
     width: 100%;
 
     label {
-        display: none;
-        width: 60px;
-        height: 60px;
+        width: 30%;
         font-size: 60px;
         line-height: 50px;
-        text-align: center;
+        text-align: left;
         position: absolute;
-        top: 50%;
-        left: 1.5rem;
+        top: 0;
+        left: 0;
+        bottom: 0;
         cursor: pointer;
-        opacity: 0.3;
-        border-radius: 50%;
+        opacity: 0.1;
         transition: opacity 0.5s ease;
+        vertical-align: middle;
+        z-index: -1;
 
         &:hover {
             opacity: 0.9;
@@ -94,6 +94,11 @@ html, body, .slideshowbob {
 
         span {
             display: none;
+            position: absolute;
+            top: 50%;
+            right: 1.5rem;
+            text-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.5);
+            transform: translate3d(0, -50%, 0);
         }
     }
 }
