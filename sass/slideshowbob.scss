@@ -23,7 +23,7 @@ html, body, .slideshowbob {
     bottom: 0;
     left: 0;
     white-space: nowrap;
-    letter-spacing: -0.31em;
+    letter-spacing: -0.29em;
     transform: translate3d(0,0,0);
     transition: transform $slide-transition-timing $slide-easing-function;
 }
@@ -69,12 +69,8 @@ html, body, .slideshowbob {
 }
 
 .slideshowbob__controls {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-
     label {
-        width: 30%;
+        width: 10%;
         font-size: 60px;
         line-height: 50px;
         text-align: left;

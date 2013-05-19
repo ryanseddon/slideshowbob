@@ -28,11 +28,10 @@
     }
 
     a {
-        color: $slide-controls-colour;
-        text-decoration: none;
+        color: $base-anchor-colour;
 
         &:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
     }
 }
