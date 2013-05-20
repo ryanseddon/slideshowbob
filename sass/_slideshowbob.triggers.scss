@@ -21,8 +21,8 @@
         z-index: 1;
         text-align: right;
 
-        span:last-child {
-            display: block;
+        &:after {
+            content: "\21dd";
         }
     }
 
@@ -30,8 +30,7 @@
         display: block;
         z-index: 1;
 
-        span:first-child {
-            display: block;
+        &:after {
             right: auto;
             left: 1.5rem;
         }
