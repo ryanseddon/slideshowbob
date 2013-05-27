@@ -82,7 +82,7 @@ body,
   height: 100%;
   position: relative;
   float: left;
-  width: 9.1%
+  width: 9.0909%
 }
 
 .slideshowbob__slide:nth-of-type(even) {
@@ -153,16 +153,16 @@ body,
 }
 
 #slideshowbob2:checked ~ .slideshowbob__container {
-  -webkit-transform: translate3d(-9.1%, 0, 0);
-  transform: translate3d(-9.1%, 0, 0)
+  -webkit-transform: translate3d(-9.0909%, 0, 0);
+  transform: translate3d(-9.0909%, 0, 0)
 }
 
 #slideshowbob1:checked ~ .slideshowbob__progress {
-  width: 9.1%
+  width: 9.0909%
 }
 
 #slideshowbob2:checked ~ .slideshowbob__progress {
-  width: 18.2%
+  width: 18.1818%
 }
 
 #slideshowbob1:checked ~ .slideshowbob__controls label:nth-child(2) {
@@ -187,12 +187,12 @@ body,
 }
 
 #slideshowbob3:checked ~ .slideshowbob__container {
-  -webkit-transform: translate3d(-18.2%, 0, 0);
-  transform: translate3d(-18.2%, 0, 0)
+  -webkit-transform: translate3d(-18.1818%, 0, 0);
+  transform: translate3d(-18.1818%, 0, 0)
 }
 
 #slideshowbob3:checked ~ .slideshowbob__progress {
-  width: 27.3%
+  width: 27.2727%
 }
 
 #slideshowbob2:checked ~ .slideshowbob__controls label:nth-child(3) {
@@ -217,12 +217,12 @@ body,
 }
 
 #slideshowbob4:checked ~ .slideshowbob__container {
-  -webkit-transform: translate3d(-27.3%, 0, 0);
-  transform: translate3d(-27.3%, 0, 0)
+  -webkit-transform: translate3d(-27.2727%, 0, 0);
+  transform: translate3d(-27.2727%, 0, 0)
 }
 
 #slideshowbob4:checked ~ .slideshowbob__progress {
-  width: 36.4%
+  width: 36.3636%
 }
 
 #slideshowbob3:checked ~ .slideshowbob__controls label:nth-child(4) {
@@ -247,12 +247,12 @@ body,
 }
 
 #slideshowbob5:checked ~ .slideshowbob__container {
-  -webkit-transform: translate3d(-36.4%, 0, 0);
-  transform: translate3d(-36.4%, 0, 0)
+  -webkit-transform: translate3d(-36.3636%, 0, 0);
+  transform: translate3d(-36.3636%, 0, 0)
 }
 
 #slideshowbob5:checked ~ .slideshowbob__progress {
-  width: 45.5%
+  width: 45.4545%
 }
 
 #slideshowbob4:checked ~ .slideshowbob__controls label:nth-child(5) {
@@ -277,12 +277,12 @@ body,
 }
 
 #slideshowbob6:checked ~ .slideshowbob__container {
-  -webkit-transform: translate3d(-45.5%, 0, 0);
-  transform: translate3d(-45.5%, 0, 0)
+  -webkit-transform: translate3d(-45.4545%, 0, 0);
+  transform: translate3d(-45.4545%, 0, 0)
 }
 
 #slideshowbob6:checked ~ .slideshowbob__progress {
-  width: 54.5%
+  width: 54.5455%
 }
 
 #slideshowbob5:checked ~ .slideshowbob__controls label:nth-child(6) {
@@ -307,12 +307,12 @@ body,
 }
 
 #slideshowbob7:checked ~ .slideshowbob__container {
-  -webkit-transform: translate3d(-54.5%, 0, 0);
-  transform: translate3d(-54.5%, 0, 0)
+  -webkit-transform: translate3d(-54.5455%, 0, 0);
+  transform: translate3d(-54.5455%, 0, 0)
 }
 
 #slideshowbob7:checked ~ .slideshowbob__progress {
-  width: 63.6%
+  width: 63.6364%
 }
 
 #slideshowbob6:checked ~ .slideshowbob__controls label:nth-child(7) {
@@ -337,12 +337,12 @@ body,
 }
 
 #slideshowbob8:checked ~ .slideshowbob__container {
-  -webkit-transform: translate3d(-63.6%, 0, 0);
-  transform: translate3d(-63.6%, 0, 0)
+  -webkit-transform: translate3d(-63.6364%, 0, 0);
+  transform: translate3d(-63.6364%, 0, 0)
 }
 
 #slideshowbob8:checked ~ .slideshowbob__progress {
-  width: 72.7%
+  width: 72.7273%
 }
 
 #slideshowbob7:checked ~ .slideshowbob__controls label:nth-child(8) {
@@ -367,12 +367,12 @@ body,
 }
 
 #slideshowbob9:checked ~ .slideshowbob__container {
-  -webkit-transform: translate3d(-72.7%, 0, 0);
-  transform: translate3d(-72.7%, 0, 0)
+  -webkit-transform: translate3d(-72.7273%, 0, 0);
+  transform: translate3d(-72.7273%, 0, 0)
 }
 
 #slideshowbob9:checked ~ .slideshowbob__progress {
-  width: 81.8%
+  width: 81.8182%
 }
 
 #slideshowbob8:checked ~ .slideshowbob__controls label:nth-child(9) {
@@ -397,12 +397,12 @@ body,
 }
 
 #slideshowbob10:checked ~ .slideshowbob__container {
-  -webkit-transform: translate3d(-81.8%, 0, 0);
-  transform: translate3d(-81.8%, 0, 0)
+  -webkit-transform: translate3d(-81.8182%, 0, 0);
+  transform: translate3d(-81.8182%, 0, 0)
 }
 
 #slideshowbob10:checked ~ .slideshowbob__progress {
-  width: 90.9%
+  width: 90.9091%
 }
 
 #slideshowbob9:checked ~ .slideshowbob__controls label:nth-child(10) {
@@ -427,8 +427,8 @@ body,
 }
 
 #slideshowbob11:checked ~ .slideshowbob__container {
-  -webkit-transform: translate3d(-90.9%, 0, 0);
-  transform: translate3d(-90.9%, 0, 0)
+  -webkit-transform: translate3d(-90.9091%, 0, 0);
+  transform: translate3d(-90.9091%, 0, 0)
 }
 
 #slideshowbob11:checked ~ .slideshowbob__progress {

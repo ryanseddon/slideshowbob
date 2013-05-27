@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       main: {
         options: {
           style: 'expanded',
-          precision: 1,
+          precision: 4,
           sourcemap: true
         },
         files: {
