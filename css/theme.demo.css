@@ -1,0 +1,57 @@
+/* Animated gif background magic */
+#slideshowbob2:checked ~ .slideshowbob__container .slideshowbob__slide:nth-child(2):after,
+#slideshowbob4:checked ~ .slideshowbob__container .slideshowbob__slide:nth-child(4):after {
+    content: "";
+    background: url(../img/diebartdie.jpg) 50% 100% no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.1;
+}
+
+/* Animated gif background magic */
+#slideshowbob4:checked ~ .slideshowbob__container .slideshowbob__slide:nth-child(4):after {
+    background: url(../img/manical.gif) 50% 0 no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+#slideshowbob2:checked ~ .slideshowbob__container .slideshowbob__slide:nth-child(2) .slideshowbob__slide__content,
+#slideshowbob4:checked ~ .slideshowbob__container .slideshowbob__slide:nth-child(4) .slideshowbob__slide__content {
+    z-index: 1;
+}
+
+/* Fade transition */
+body {
+    background: #1F978D;
+}
+#slideshowbob6:checked ~ .slideshowbob__container {
+    -webkit-transition: none;
+    transition: none;
+}
+
+.slideshowbob__container .slideshowbob__slide:nth-child(6) {
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
+    opacity: 0;
+}
+
+#slideshowbob6:checked ~ .slideshowbob__container .slideshowbob__slide:nth-child(6),
+#slideshowbob7:checked ~ .slideshowbob__container .slideshowbob__slide:nth-child(6) {
+    opacity: 1;
+}
+
+/* Scale transition */
+#slideshowbob7:checked ~ .slideshowbob__container .slideshowbob__slide:nth-child(6) {
+    -webkit-animation: scaleDown .7s ease both;
+    animation: scaleDown .7s ease both;
+}
+@-webkit-keyframes scaleDown {
+    to { opacity: 0; -webkit-transform: scale(.8); }
+}
+@keyframes scaleDown {
+    to { opacity: 0; transform: scale(.8); }
+}
