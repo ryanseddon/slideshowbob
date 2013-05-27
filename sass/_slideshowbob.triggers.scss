@@ -1,6 +1,5 @@
 @mixin slideshowbobtriggers( $slides ) {
     $slide-n: $slides - 1;
-    $slide-percentage: 100 / $slide-count;
 
     #slideshowbob#{$slides}:checked ~ .slideshowbob__container {
             transform: translate3d(#{-100% / $slide-count * $slide-n}, 0, 0);

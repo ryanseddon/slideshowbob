@@ -1,6 +1,6 @@
 # Slideshowbob.css
 
-![]()
+![](http://www.thecssninja.com/i/silhoeutte.png)
 
 ## A slide framework powered by :checked
 
@@ -8,7 +8,7 @@ Once again I did a talk and as usual I got caught up in the meta process of slid
 
 ## Check out the example deck
 
-See here for awesome `:checked` powered slides to impress all your friends.
+See <a href="http://ryanseddon.github.io/slideshowbob">demo deck</a> for awesome `:checked` powered slides to impress all your friends.
 
 ## Works nicely on mobile
 
@@ -16,13 +16,13 @@ The slide animation is hardware accelerated so it's smooth as butter on mobiles.
 
 ## Powerful build system
 
-I have a build system in place not to make CSS more complicated but to take the complication out of this project. It uses SASS so I can create a helpful mixin to generate the mind melting selectors needed to do the slide system, autoprefixer to add prefixes based on caniuse.com data, CSSLint to make sure nothing silly is done.
+I have a build system in place not to make CSS more complicated but to take the complication out of this project. It uses SASS so I can create a helpful mixin to generate the mind melting selectors needed to do the slide system, autoprefixer to add prefixes based on caniuse.com data and CSSLint to make sure nothing silly is done.
 
 ## Get setup
 
 1. Install node.js
-2. Run `npm install grunt-cli`
-3. Inside this project folder run `npm install` to get the dependancies
+2. Run `npm install grunt-cli` if you don't already have grunt >=0.4.0 installed.
+3. Inside this project folder run `npm install` to get the dependencies
 4. Run `grunt` to generate files inside `dist` folder.
 
 ## Adjust slide count
