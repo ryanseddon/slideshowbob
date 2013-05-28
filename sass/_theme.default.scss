@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+.slideshowbob {
+    font-family: $slide-font-family;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: -0.02em;
+    color: #eee;
+    text-align: center;
+
+    h1, h2, h3, h4 {
+        margin: 0 0 20px 0;
+        color: #eee;
+        font-family: $slide-font-heading;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+        text-transform: none;
+        text-shadow: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    pre {
+        text-align: left;
+    }
+
+    a {
+        color: $base-anchor-colour;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.slideshowbob__slide__content {
+    text-align: center;
+}

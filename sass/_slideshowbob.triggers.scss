@@ -1,0 +1,38 @@
+@mixin slideshowbobtriggers( $slides ) {
+    $slide-n: $slides - 1;
+
+    #slideshowbob#{$slides}:checked ~ .slideshowbob__container {
+            transform: translate3d(#{-100% / $slide-count * $slide-n}, 0, 0);
+    }
+
+    @if $slide-n == 1 {
+        #slideshowbob#{$slide-n}:checked ~ .slideshowbob__progress {
+            width: #{100% / $slide-count}; 
+        }
+    }
+
+    #slideshowbob#{$slides}:checked ~ .slideshowbob__progress {
+        width: #{100% / $slide-count * $slides}; 
+    }
+
+    #slideshowbob#{$slide-n}:checked ~ .slideshowbob__controls label:nth-child(#{$slides}) {
+        left: auto;
+        right: 0;
+        z-index: 1;
+        text-align: right;
+
+        &:after {
+            content: "\21dd";
+        }
+    }
+
+    #slideshowbob#{$slides}:checked ~ .slideshowbob__controls label:nth-child(#{$slide-n}) {
+        display: block;
+        z-index: 1;
+
+        &:after {
+            right: auto;
+            left: 1.5rem;
+        }
+    }
+}
